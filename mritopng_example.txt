@@ -1,0 +1,3 @@
+Examples of commands to run for mritopng command line tool:
+mritopng -f 1/Features pngs/1/Features
+mritopng -f 1/Labels pngs/1/Labels
