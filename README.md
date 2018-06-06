@@ -1,6 +1,6 @@
 # BrainLesionSegmentation-pix2pix-tensorflow
 
-Used Tensorflow implementation of[pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al to generate brain lesion segmentations of brain MRI scans.
+Used Tensorflow implementation of [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al to generate brain lesion segmentations of brain MRI scans.
 
 ## Setup
 
