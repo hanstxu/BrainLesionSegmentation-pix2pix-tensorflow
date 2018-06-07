@@ -3,6 +3,9 @@
 Based on Tensorflow implementation of
 [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
 
+Images that we used for our project are included in the repository for sample
+purposes.
+
 ## Setup
 
 ### Prerequisites
@@ -53,6 +56,14 @@ To create a training model as well as test the resulting model:
 
 Note that this may take awhile (i.e. at least 10 hours), depending on how big
 your dataset is.
+
+### Get Statistics on the Accuracy of the Model ###
+
+To get the average, min, and max DICE score:
+
+```
+python compare.py
+```
 
 ## Citation
 If you use this code for your research, please cite the paper this code is based
