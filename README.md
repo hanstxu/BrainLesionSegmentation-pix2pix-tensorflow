@@ -1,7 +1,6 @@
 # BrainLesionSegmentation-pix2pix-tensorflow
 
-Based on Tensorflow implementation of
-[pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
+Used Tensorflow implementation of [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al to generate brain lesion segmentations of brain MRI scans.
 
 Images that we used for our project are included in the repository for sample
 purposes.
@@ -20,7 +19,11 @@ purposes.
 
 ### Converting MRI Images to PNG Formats
 
-TODO
+Use `mritopng.py` to convert an entire folder of DICOM images to PNG.
+
+```
+python mritopng.py -f <src_folder> <dst_folder>
+```
 
 ### Creating Datasets from Existing Images
 
