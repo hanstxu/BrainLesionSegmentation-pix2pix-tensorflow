@@ -4,23 +4,23 @@ Taken and extended from https://gist.github.com/JDWarner/6730747
 """
 
 import numpy as np
-from scipy import misc
 import sys
 from os import listdir
 from os.path import isfile, join
+from matplotlib.pyplot import imread
+
 
 def main():
-    only_files = [f for f in listdir("test_results/images/") if isfile(join("test_results/images/", f))]
+    only_files = [f for f in listdir("./test_results/images/") if isfile(join("./test_results/images/", f))]
     outputs_targets = list(filter(lambda x:x.endswith(("outputs.png", "targets.png")), only_files))
-    
     sum = 0
     count = 0
     min_score = sys.maxsize
     max_score = 0
     
     for output, target in zip(outputs_targets[::2], outputs_targets[1::2]):
-        arr1 = misc.imread(output)
-        arr2 = misc.imread(target)
+        arr1 = imread("test_results/images/" + output)
+        arr2 = imread("test_results/images/" + target)
         dice_score = dice(arr1, arr2)
         sum += dice_score
         count += 1
