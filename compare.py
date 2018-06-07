@@ -27,9 +27,9 @@ def main():
         min_score = min(min_score, dice_score)
         max_score = max(max_score, dice_score)
     
-    print "average: ", sum/count
-    print "minimum score: ", min_score
-    print "maximum score: ", max_score
+    print("average: " + str(sum/count))
+    print("minimum score: " + str(min_score))
+    print("maximum score: " + str(max_score))
 
 def dice(im1, im2):
     """
