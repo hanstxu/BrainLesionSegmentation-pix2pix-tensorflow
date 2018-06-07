@@ -10,5 +10,5 @@ python3 pix2pix.py \
 python3 pix2pix.py \
   --mode test \
   --output_dir test_results \
-  --input_dir dataset/val \
+  --input_dir dataset/test \
   --checkpoint training_model
